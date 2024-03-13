@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Rate from "rc-rate";
 import ImageCarousel from "./Carousel";
 
@@ -15,7 +15,6 @@ const ListItem = ({
   getReviews,
   isShowReviewEnabled,
 }) => {
-  console.log("imageSrc==", imageSrc);
   return (
     <li
       style={{
@@ -29,11 +28,6 @@ const ListItem = ({
     >
       {/* hotel image */}
       <div style={{ width: "30%" }}>
-        {/* <img
-          src={imageSrc}
-          alt={`${name}-iamge`}
-          style={{ width: "100%", maxWidth: "300px", height: "auto" }}
-        /> */}
         <ImageCarousel images={imageSrc} />
       </div>
       {/* hotel details */}

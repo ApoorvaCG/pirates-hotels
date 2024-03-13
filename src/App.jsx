@@ -35,9 +35,7 @@ function App() {
   };
 
   return (
-    <div
-      style={{ maxWidth: "1024px", marginRight: "auto", marginLeft: "auto" }}
-    >
+    <div className="container">
       <div className="card">
         <button onClick={onClickLoadHotels}>Load Hotels</button>
       </div>
@@ -159,9 +157,3 @@ function App() {
 }
 
 export default App;
-
-/* 
-conditoinal review
-review - customer namae, feedback
-images
-*/
